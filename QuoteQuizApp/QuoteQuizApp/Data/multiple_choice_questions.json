@@ -1,0 +1,63 @@
+[
+    {
+        "questionType" : "Multiple Choice",
+        "question" : "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.",
+        "possibleAnswers": ["Helen Keller","John F. Kennedy", "Anne Frank"],
+        "correctAnswer" : "Helen Keller"
+    },
+    {
+        "questionType" : "Multiple Choice",
+        "question" : "Laziness may appear attractive, but work gives satisfaction.",
+        "possibleAnswers": ["Bob Marley","Anne Frank", "Steve Jobs"],
+        "correctAnswer" : "Anne Frank"
+    },
+    {
+        "questionType" : "Multiple Choice",
+        "question" : "A leader's job is not to do the work for others, it's to help others figure out how to do it themselves, to get things done, and to succeed beyond what they thought possible.",
+        "possibleAnswers": ["Simon Sinek","Warren Buffett", "Martin Luther King, Jr."],
+        "correctAnswer" : "Simon Sinek"
+    },
+    {
+        "questionType" : "Multiple Choice",
+        "question" : "Great things in business are never done by one person. They're done by a team of people.",
+        "possibleAnswers": ["Elon Musk","Bill Gates", "Steve Jobs"],
+        "correctAnswer" : "Steve Jobs"
+    },
+    {
+        "questionType" : "Multiple Choice",
+        "question" : "You have enemies? Good. That means you've stood up for something, sometime in your life.",
+        "possibleAnswers": ["Abraham Lincoln","Winston Churchill", "Fidel Castro"],
+        "correctAnswer" : "Winston Churchill"
+    },
+    {
+        "questionType" : "Multiple Choice",
+        "question" : "I am not afraid of an army of lions led by a sheep; I am afraid of an army of sheep led by a lion.",
+        "possibleAnswers": ["Napoleon Bonaparte","Julius Caesar", "Alexander The Great"],
+        "correctAnswer" : "Alexander The Great"
+    },
+    {
+        "questionType" : "Multiple Choice",
+        "question" : "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.",
+        "possibleAnswers": ["Buddha","Jesus Christ", "Pope John Paul II"],
+        "correctAnswer" : "Buddha"
+    },
+    {
+        "questionType" : "Multiple Choice",
+        "question" : "For once you have tasted flight you will walk the earth with your eyes turned skywards, for there you have been and there you will long to return.",
+        "possibleAnswers": ["Amelia Earhart","Wright Brothers", "Leonardo da Vinci"],
+        "correctAnswer" : "Leonardo da Vinci"
+    },
+    {
+        "questionType" : "Multiple Choice",
+        "question" : "Logic will get you from A to B. Imagination will take you everywhere.",
+        "possibleAnswers": ["Albert Einstein","Isaac Newton", "Salvador Dali"],
+        "correctAnswer" : "Albert Einstein"
+    },
+    {
+        "questionType" : "Multiple Choice",
+        "question" : "I don't think human beings learn anything without desperation. Desperation is a necessary ingredient to learning anything or creating anything. Period. If you ain't desperate at some point, you ain't interesting.",
+        "possibleAnswers": ["Robin Williams","Jim Carrey", "Charlie Chaplin"],
+        "correctAnswer" : "Jim Carrey"
+    }
+ 
+]

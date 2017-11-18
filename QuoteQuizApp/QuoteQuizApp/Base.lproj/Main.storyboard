@@ -161,6 +161,12 @@
                         <viewLayoutGuide key="safeArea" id="o6e-Qb-PK8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="list_icon" id="xPI-Qe-N1U"/>
+                    <connections>
+                        <outlet property="firstAnswerBtn" destination="Whw-pM-CXh" id="602-Fw-pgJ"/>
+                        <outlet property="quoteField" destination="bZM-Mx-bga" id="ZYl-CF-zY3"/>
+                        <outlet property="secondAnswerBtn" destination="tHq-sA-YcP" id="4ku-iT-phk"/>
+                        <outlet property="thirdAnswerBtn" destination="EXm-SB-nVq" id="Z4E-fU-ZHN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAC-K6-94C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
