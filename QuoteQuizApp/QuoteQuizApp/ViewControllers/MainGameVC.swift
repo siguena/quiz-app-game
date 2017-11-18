@@ -44,7 +44,7 @@ class MainGameVC: UIViewController {
     }
     
     func createModalPopup (userAnswerText: String) {
-        let modalPopup = UIAlertController(title: "", message: userAnswerText, preferredStyle: .alert)
+        let modalPopup = UIAlertController(title: userAnswerText, message: "", preferredStyle: .alert)
         modalPopup.addAction(UIAlertAction(title: "OK", style: .default,handler: loadNextQuestion))
         
         self.present(modalPopup, animated: true, completion:nil)
