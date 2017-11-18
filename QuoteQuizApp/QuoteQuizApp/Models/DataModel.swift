@@ -14,3 +14,12 @@ struct MultipleChoiceQuestion: Codable {
     let possibleAnswers: [String]
     let correctAnswer: String
 }
+
+
+class PlayerScoreAndDataForSession {
+    static let globalScore = PlayerScoreAndDataForSession()
+    
+    var questionData =  [MultipleChoiceQuestion]()
+    var currentQuestionID = 0
+    var currentScore = 0
+}

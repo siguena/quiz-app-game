@@ -10,6 +10,7 @@
 		4A5DFCB51FC0241200DD92EA /* multiple_choice_questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A5DFCB41FC0241200DD92EA /* multiple_choice_questions.json */; };
 		4A5DFCB71FC02BB900DD92EA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DFCB61FC02BB900DD92EA /* DataModel.swift */; };
 		4A5DFCB91FC02D1300DD92EA /* LoadDataFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DFCB81FC02D1300DD92EA /* LoadDataFromFile.swift */; };
+		4A5DFCBB1FC0786A00DD92EA /* FinalScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DFCBA1FC0786A00DD92EA /* FinalScoreVC.swift */; };
 		4AFEC56B1FC002E400ED08F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEC56A1FC002E400ED08F1 /* AppDelegate.swift */; };
 		4AFEC56D1FC002E400ED08F1 /* MainGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEC56C1FC002E400ED08F1 /* MainGameVC.swift */; };
 		4AFEC56F1FC002E400ED08F1 /* GameSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEC56E1FC002E400ED08F1 /* GameSettingsVC.swift */; };
@@ -22,6 +23,7 @@
 		4A5DFCB41FC0241200DD92EA /* multiple_choice_questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = multiple_choice_questions.json; sourceTree = "<group>"; };
 		4A5DFCB61FC02BB900DD92EA /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		4A5DFCB81FC02D1300DD92EA /* LoadDataFromFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataFromFile.swift; sourceTree = "<group>"; };
+		4A5DFCBA1FC0786A00DD92EA /* FinalScoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScoreVC.swift; sourceTree = "<group>"; };
 		4AFEC5671FC002E400ED08F1 /* QuoteQuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteQuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFEC56A1FC002E400ED08F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AFEC56C1FC002E400ED08F1 /* MainGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameVC.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				4AFEC56C1FC002E400ED08F1 /* MainGameVC.swift */,
 				4AFEC56E1FC002E400ED08F1 /* GameSettingsVC.swift */,
+				4A5DFCBA1FC0786A00DD92EA /* FinalScoreVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -66,6 +69,14 @@
 				4A5DFCB41FC0241200DD92EA /* multiple_choice_questions.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		4A5DFCBC1FC095BB00DD92EA /* Helper Functions */ = {
+			isa = PBXGroup;
+			children = (
+				4A5DFCB81FC02D1300DD92EA /* LoadDataFromFile.swift */,
+			);
+			path = "Helper Functions";
 			sourceTree = "<group>";
 		};
 		4AFEC55E1FC002E400ED08F1 = {
@@ -88,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4A5DFCB11FC00AFC00DD92EA /* Data */,
+				4A5DFCBC1FC095BB00DD92EA /* Helper Functions */,
 				4A5DFCB01FC00AF300DD92EA /* Models */,
 				4A5DFCAF1FC00AC700DD92EA /* ViewControllers */,
 				4AFEC56A1FC002E400ED08F1 /* AppDelegate.swift */,
@@ -95,7 +107,6 @@
 				4AFEC5731FC002E400ED08F1 /* Assets.xcassets */,
 				4AFEC5751FC002E400ED08F1 /* LaunchScreen.storyboard */,
 				4AFEC5781FC002E400ED08F1 /* Info.plist */,
-				4A5DFCB81FC02D1300DD92EA /* LoadDataFromFile.swift */,
 			);
 			path = QuoteQuizApp;
 			sourceTree = "<group>";
@@ -177,6 +188,7 @@
 				4A5DFCB71FC02BB900DD92EA /* DataModel.swift in Sources */,
 				4AFEC56B1FC002E400ED08F1 /* AppDelegate.swift in Sources */,
 				4A5DFCB91FC02D1300DD92EA /* LoadDataFromFile.swift in Sources */,
+				4A5DFCBB1FC0786A00DD92EA /* FinalScoreVC.swift in Sources */,
 				4AFEC56D1FC002E400ED08F1 /* MainGameVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
