@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A5DFCB51FC0241200DD92EA /* multiple_choice_questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A5DFCB41FC0241200DD92EA /* multiple_choice_questions.json */; };
 		4A5DFCB71FC02BB900DD92EA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DFCB61FC02BB900DD92EA /* DataModel.swift */; };
 		4A5DFCB91FC02D1300DD92EA /* LoadDataFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DFCB81FC02D1300DD92EA /* LoadDataFromFile.swift */; };
 		4A5DFCBB1FC0786A00DD92EA /* FinalScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DFCBA1FC0786A00DD92EA /* FinalScoreVC.swift */; };
+		4A5DFCC61FC15C8B00DD92EA /* yes_no_questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A5DFCC41FC15C8A00DD92EA /* yes_no_questions.json */; };
+		4A5DFCC71FC15C8B00DD92EA /* multiple_choice_questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A5DFCC51FC15C8B00DD92EA /* multiple_choice_questions.json */; };
 		4AFEC56B1FC002E400ED08F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEC56A1FC002E400ED08F1 /* AppDelegate.swift */; };
 		4AFEC56D1FC002E400ED08F1 /* MainGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEC56C1FC002E400ED08F1 /* MainGameVC.swift */; };
 		4AFEC56F1FC002E400ED08F1 /* GameSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFEC56E1FC002E400ED08F1 /* GameSettingsVC.swift */; };
@@ -20,10 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A5DFCB41FC0241200DD92EA /* multiple_choice_questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = multiple_choice_questions.json; sourceTree = "<group>"; };
 		4A5DFCB61FC02BB900DD92EA /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		4A5DFCB81FC02D1300DD92EA /* LoadDataFromFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataFromFile.swift; sourceTree = "<group>"; };
 		4A5DFCBA1FC0786A00DD92EA /* FinalScoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScoreVC.swift; sourceTree = "<group>"; };
+		4A5DFCC41FC15C8A00DD92EA /* yes_no_questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = yes_no_questions.json; sourceTree = "<group>"; };
+		4A5DFCC51FC15C8B00DD92EA /* multiple_choice_questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = multiple_choice_questions.json; sourceTree = "<group>"; };
 		4AFEC5671FC002E400ED08F1 /* QuoteQuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteQuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFEC56A1FC002E400ED08F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AFEC56C1FC002E400ED08F1 /* MainGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameVC.swift; sourceTree = "<group>"; };
@@ -66,7 +68,8 @@
 		4A5DFCB11FC00AFC00DD92EA /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4A5DFCB41FC0241200DD92EA /* multiple_choice_questions.json */,
+				4A5DFCC51FC15C8B00DD92EA /* multiple_choice_questions.json */,
+				4A5DFCC41FC15C8A00DD92EA /* yes_no_questions.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -170,10 +173,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5DFCC61FC15C8B00DD92EA /* yes_no_questions.json in Resources */,
 				4AFEC5771FC002E400ED08F1 /* LaunchScreen.storyboard in Resources */,
 				4AFEC5741FC002E400ED08F1 /* Assets.xcassets in Resources */,
-				4A5DFCB51FC0241200DD92EA /* multiple_choice_questions.json in Resources */,
 				4AFEC5721FC002E400ED08F1 /* Main.storyboard in Resources */,
+				4A5DFCC71FC15C8B00DD92EA /* multiple_choice_questions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

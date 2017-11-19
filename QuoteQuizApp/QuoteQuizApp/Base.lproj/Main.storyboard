@@ -47,6 +47,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRW-UX-ivL">
                                         <rect key="frame" x="231" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="gameSettingChanged:" destination="5BP-Xa-O4k" eventType="valueChanged" id="Jrk-mo-J97"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -63,6 +66,9 @@
                         <viewLayoutGuide key="safeArea" id="R66-9f-ryu"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="gear_icon" id="E4m-oi-oZA"/>
+                    <connections>
+                        <outlet property="switchModeSlider" destination="PRW-UX-ivL" id="FPk-FI-2s8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALr-2D-nRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,6 +108,54 @@
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="PAh-sR-y6R">
+                                <rect key="frame" x="20" y="348.5" width="280" height="110"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iy-jS-UoZ">
+                                        <rect key="frame" x="119" y="0.0" width="42" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="iTn-hr-bEd">
+                                        <rect key="frame" x="0.0" y="70" width="280" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX6-i0-W5p" customClass="CustomButtonStyle" customModule="QuoteQuizApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="zd4-9S-PAl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
+                                                <state key="normal" title="Yes">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answerBtnWasPressedWithSender:" destination="wdH-gA-zAx" eventType="touchUpInside" id="gmC-L1-9Yv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKW-nz-2z0" customClass="CustomButtonStyle" customModule="QuoteQuizApp" customModuleProvider="target">
+                                                <rect key="frame" x="155" y="0.0" width="125" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="k7A-1V-3YQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
+                                                <state key="normal" title="No">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answerBtnWasPressedWithSender:" destination="wdH-gA-zAx" eventType="touchUpInside" id="Ml9-m1-RER"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iTn-hr-bEd" secondAttribute="trailing" id="CxJ-Q5-1bU"/>
+                                    <constraint firstItem="iTn-hr-bEd" firstAttribute="leading" secondItem="PAh-sR-y6R" secondAttribute="leading" id="QZg-yZ-MYj"/>
+                                </constraints>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Wr1-1t-BFb">
                                 <rect key="frame" x="20" y="338.5" width="280" height="144"/>
                                 <subviews>
@@ -158,13 +212,16 @@
                             <constraint firstItem="bZM-Mx-bga" firstAttribute="leading" secondItem="o6e-Qb-PK8" secondAttribute="leading" constant="20" id="57E-Vi-vkq"/>
                             <constraint firstItem="Wr1-1t-BFb" firstAttribute="leading" secondItem="o6e-Qb-PK8" secondAttribute="leading" constant="20" id="7re-Or-6wP"/>
                             <constraint firstItem="JLR-Oa-7yV" firstAttribute="leading" secondItem="o6e-Qb-PK8" secondAttribute="leading" constant="20" id="My4-fl-qOn"/>
+                            <constraint firstItem="PAh-sR-y6R" firstAttribute="top" secondItem="bZM-Mx-bga" secondAttribute="bottom" constant="20" id="OUz-hh-8A3"/>
                             <constraint firstItem="o6e-Qb-PK8" firstAttribute="trailing" secondItem="JLR-Oa-7yV" secondAttribute="trailing" constant="20" id="RgY-6e-Npy"/>
                             <constraint firstItem="efR-Bh-DyR" firstAttribute="top" secondItem="o6e-Qb-PK8" secondAttribute="top" id="YBk-3s-ILB"/>
+                            <constraint firstItem="PAh-sR-y6R" firstAttribute="leading" secondItem="o6e-Qb-PK8" secondAttribute="leading" constant="20" id="e3u-Tq-9F1"/>
                             <constraint firstItem="Wr1-1t-BFb" firstAttribute="top" secondItem="bZM-Mx-bga" secondAttribute="bottom" constant="10" id="fZ1-fR-xyK"/>
                             <constraint firstItem="o6e-Qb-PK8" firstAttribute="trailing" secondItem="efR-Bh-DyR" secondAttribute="trailing" id="kUk-BI-pqo"/>
                             <constraint firstItem="efR-Bh-DyR" firstAttribute="leading" secondItem="o6e-Qb-PK8" secondAttribute="leading" id="kic-Mn-qQh"/>
                             <constraint firstItem="o6e-Qb-PK8" firstAttribute="trailing" secondItem="Wr1-1t-BFb" secondAttribute="trailing" constant="20" id="saW-Gu-pbW"/>
                             <constraint firstItem="JLR-Oa-7yV" firstAttribute="top" secondItem="efR-Bh-DyR" secondAttribute="bottom" constant="20" id="ukq-MB-Aey"/>
+                            <constraint firstItem="o6e-Qb-PK8" firstAttribute="trailing" secondItem="PAh-sR-y6R" secondAttribute="trailing" constant="20" id="wfT-39-Pvs"/>
                             <constraint firstItem="o6e-Qb-PK8" firstAttribute="trailing" secondItem="bZM-Mx-bga" secondAttribute="trailing" constant="20" id="zKy-JH-BRp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="o6e-Qb-PK8"/>
@@ -172,9 +229,12 @@
                     <tabBarItem key="tabBarItem" title="" image="list_icon" id="xPI-Qe-N1U"/>
                     <connections>
                         <outlet property="firstAnswerBtn" destination="Whw-pM-CXh" id="602-Fw-pgJ"/>
+                        <outlet property="multipleQuestionsSection" destination="Wr1-1t-BFb" id="DMO-6b-J43"/>
                         <outlet property="quoteField" destination="bZM-Mx-bga" id="ZYl-CF-zY3"/>
                         <outlet property="secondAnswerBtn" destination="tHq-sA-YcP" id="4ku-iT-phk"/>
                         <outlet property="thirdAnswerBtn" destination="EXm-SB-nVq" id="Z4E-fU-ZHN"/>
+                        <outlet property="yesNoGameAuthorLabel" destination="9iy-jS-UoZ" id="6b7-4Z-4QQ"/>
+                        <outlet property="yesNoQuestionsSection" destination="PAh-sR-y6R" id="XfF-jB-4l5"/>
                         <segue destination="6fE-kA-G4D" kind="show" identifier="FinalScoreSegue" id="ijU-jo-H1j"/>
                     </connections>
                 </viewController>

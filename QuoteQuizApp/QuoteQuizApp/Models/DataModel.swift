@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct MultipleChoiceQuestion: Codable {
+struct QuizDataModel: Codable {
     let questionType: String
     let question: String
     let possibleAnswers: [String]
@@ -19,7 +19,10 @@ struct MultipleChoiceQuestion: Codable {
 class PlayerScoreAndDataForSession {
     static let globalScore = PlayerScoreAndDataForSession()
     
-    var questionData =  [MultipleChoiceQuestion]()
+    var isDefaultGameMode = true
+    var isGameModeChanged = false
+    var multipleAnswersData =  [QuizDataModel]()
+    var yesNoAnswerData = [QuizDataModel]()
     var currentQuestionID = 0
     var currentScore = 0
 }

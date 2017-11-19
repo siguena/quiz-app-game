@@ -17,8 +17,8 @@ func readContentsOfFile(_ fileName: String, _ fileType: String) -> NSData {
 
 }
 
-func decodeFromJSONFormat(_ data: NSData) -> [MultipleChoiceQuestion] {
-    let questionsDecodedFromJSON = try? JSONDecoder().decode([MultipleChoiceQuestion].self, from: data as Data)
+func decodeFromJSONFormat(_ data: NSData) -> [QuizDataModel] {
+    let questionsDecodedFromJSON = try? JSONDecoder().decode([QuizDataModel].self, from: data as Data)
     return questionsDecodedFromJSON!
 }
 
