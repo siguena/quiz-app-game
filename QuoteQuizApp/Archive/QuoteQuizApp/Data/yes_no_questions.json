@@ -1,0 +1,63 @@
+[
+    {
+        "questionType" : "True / False",
+        "question" : "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.",
+        "possibleAnswers": ["Helen Keller"],
+        "correctAnswer" : "Yes"
+    },
+    {
+        "questionType" : "True / False",
+        "question" : "Laziness may appear attractive, but work gives satisfaction.",
+        "possibleAnswers": ["Steve Jobs"],
+        "correctAnswer" : "No"
+    },
+    {
+        "questionType" : "True / False",
+        "question" : "A leader's job is not to do the work for others, it's to help others figure out how to do it themselves, to get things done, and to succeed beyond what they thought possible.",
+        "possibleAnswers": ["Warren Buffett"],
+        "correctAnswer" : "No"
+    },
+    {
+        "questionType" : "True / False",
+        "question" : "Great things in business are never done by one person. They're done by a team of people.",
+        "possibleAnswers": ["Steve Jobs"],
+        "correctAnswer" : "Yes"
+    },
+    {
+        "questionType" : "True / False",
+        "question" : "You have enemies? Good. That means you've stood up for something, sometime in your life.",
+        "possibleAnswers": ["Abraham Lincoln"],
+        "correctAnswer" : "No"
+    },
+    {
+        "questionType" : "True / False",
+        "question" : "I am not afraid of an army of lions led by a sheep; I am afraid of an army of sheep led by a lion.",
+        "possibleAnswers": ["Alexander The Great"],
+        "correctAnswer" : "Yes"
+    },
+    {
+        "questionType" : "True / False",
+        "question" : "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.",
+        "possibleAnswers": ["Buddha"],
+        "correctAnswer" : "Yes"
+    },
+    {
+        "questionType" : "True / False",
+        "question" : "For once you have tasted flight you will walk the earth with your eyes turned skywards, for there you have been and there you will long to return.",
+        "possibleAnswers": ["Amelia Earhart"],
+        "correctAnswer" : "No"
+    },
+    {
+        "questionType" : "True / False",
+        "question" : "Logic will get you from A to B. Imagination will take you everywhere.",
+        "possibleAnswers": ["Albert Einstein"],
+        "correctAnswer" : "Yes"
+    },
+    {
+        "questionType" : "True / False",
+        "question" : "I don't think human beings learn anything without desperation. Desperation is a necessary ingredient to learning anything or creating anything. Period. If you ain't desperate at some point, you ain't interesting.",
+        "possibleAnswers": ["Robin Williams"],
+        "correctAnswer" : "No"
+    }
+ 
+]
