@@ -21,4 +21,8 @@ class FinalScoreVC: UIViewController {
     
     }
     
+    @IBAction func newGameBtnPressed(_ sender: UIButton){
+        performSegue(withIdentifier: "NewGameSegue", sender: self)
+    }
+    
 }

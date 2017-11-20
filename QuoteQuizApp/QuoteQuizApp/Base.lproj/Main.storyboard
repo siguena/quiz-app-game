@@ -389,7 +389,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="EL8-IP-g3f" kind="show" id="MdU-Gh-shY"/>
+                                    <action selector="newGameBtnPressed:" destination="6fE-kA-G4D" eventType="touchUpInside" id="hWT-Dj-60o"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -428,9 +428,11 @@
                     </view>
                     <connections>
                         <outlet property="scoreLabel" destination="LU1-ha-6c5" id="XzS-W6-oMx"/>
+                        <segue destination="Bk7-18-6Gd" kind="unwind" identifier="NewGameSegue" unwindAction="unwindFromSegueWithSegue:" id="yo7-05-6Lk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olN-M0-a1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Bk7-18-6Gd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1798" y="-1143"/>
         </scene>

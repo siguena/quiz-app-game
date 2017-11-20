@@ -10,6 +10,7 @@ import UIKit
 
 class MainGameVC: UIViewController {
 
+    @IBAction func unwindFromSegue(segue: UIStoryboardSegue) {}
     @IBOutlet weak var quoteField: UITextView!
     
     @IBOutlet weak var multipleQuestionsSection: UIStackView!
